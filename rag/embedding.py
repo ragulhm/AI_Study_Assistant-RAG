@@ -1,7 +1,7 @@
 from google import genai
 import os
 
-client = genai.Client(api_key=os.getenv("GOOGLE_API_KEY"))
+client = genai.Client(api_key=os.getenv("OPENROUTER_API_KEY"))
 
 def generate_embedding(text):
     response = client.models.embed_content(
